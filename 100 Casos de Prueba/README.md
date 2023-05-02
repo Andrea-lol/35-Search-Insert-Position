@@ -58,7 +58,7 @@ Este código se realizó en la versión 12.6 de NetBeans IDE
 
 ## Nota 🔖
 
-Para el código se utilizaron variables en inglés ya que el LeetCode pedía que fuese así para que funcionara, además como dije en la parte superior se utiliz+o el NetBeans 12.6 para realizarlo. Si se requiere más información puede dirigirse al documento PDF.
+Para el código se utilizaron variables en inglés ya que el LeetCode pedía que fuese así para que funcionara, además como dije en la parte superior se ha utiliz+o el NetBeans 12.6 para realizarlo. Si se requiere más información puede dirigirse al documento PDF.
 
 ## LeetCode
 **[35. Search Insert Position]** de la **[LeetCode]**
