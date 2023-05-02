@@ -4,7 +4,7 @@
 
 ## Descripción Y Contexto 📑
 
-Esta programa realizado genera 100 casos de prueba en total para el problema. Este busca tener una variedad equilibrada de casos de prueba, para así generar arreglos de diferentes longitudes con valores enteros aleatorios distintos y variedad de valores (números) objetivo. 
+Este programa realizado genera 100 casos de prueba en total para el problema. Este busca tener una variedad equilibrada de casos de prueba, para así generar arreglos de diferentes longitudes con valores enteros aleatorios distintos y variedad de valores (números) objetivo. 
 
 La primera mitad de los casos de prueba están entre valores (número) objetivo que se encuentran en el arreglo, mientras la otra mitad consiste en valores objetivo que no se encuentran en el arreglo.
 
