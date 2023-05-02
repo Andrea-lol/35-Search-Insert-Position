@@ -15,11 +15,53 @@ Cada caso de prueba se imprime en la consola como un arreglo, un valor objetivo 
 
 ## Explicación del Código Main 📃
 
-Debe escribir un algoritmo con una complejidad de tiempo de ejecución O(log n).
+Este código se realizó en la versión 12.6 de NetBeans IDE
 
-Ejemplo 1:
+![Imagen de Evidencia](https://github.com/Andrea-lol/35-Search-Insert-Position/blob/main/100%20Casos%20de%20Prueba/img/Evidencia4.png "Esta es una imagen de muestra.")
+
+#### 1. La primera parte del código consiste en generar casos de prueba en donde el valor (número) objetivo se encuentra en el arreglo, para ello:
 
 ```bash
-    $ Input: nums = [1,3,5,6], target = 5
-    $ Output: 2
+    1.1. Define el número total de casos de prueba en la variable numTestCases.
 ```
+```bash
+    1.2. Usa un bucle for para generar numTestCases/2 casos de prueba, es decir, la mitad de los casos de prueba estarán ahí.
+```
+```bash
+    1.3. Para cada caso se genera un tamaño aleatorio para el arreglo utilizando rand.nextInt(100) + 1, donde el tamaño será entre 1 y 100.
+```
+```bash
+    1.4. Crea un arreglo de tamaño aleatorio y lo llena con números enteros aleatorios entre -100 y 99 utilizando el bucle for.
+```
+```bash
+    1.5. Se ordena el arreglo en orden ascendente utilizando Arrays.sort().
+```
+```bash
+    1.6. Elige el valor (número) objetivo aleatorio dentro del arreglo utilizando nums[rand.nextInt(size)].
+```
+```bash
+    1.7. Llama a la función searchInsert que contiene nums y target) y se imprime el arreglo, el valor (número) objetivo y el resultado de la búsqueda.
+```
+
+
+#### 2. La segunda parte del código abarca y genera casos de prueba donde el valor (número) objetivo que no están en el arreglo, para ello:
+
+```bash
+    2.1. Como se dijo en la primera parte, se usa otro bucle for para generar numTestCases/2 casos de prueba, es decir, la mitad de los casos de prueba estarán ahí.
+```
+```bash
+    2.2. El proceso es similar al primer bucle for, solo que esta vez genera un valor (número) objetivo aleatorio que no está presente en el arreglo. Esto se hace utilizando un bucle while que genera un valor aleatorio y verifica si ya está presente en el arreglo utilizando Arrays.binarySearch(). Si el valor ya está en el arreglo, se genera otro valor aleatorio y se repite el proceso hasta que se encuentra un valor que no está en el arreglo.
+```
+```bash
+    2.3. Llama a la función searchInsert que contiene nums y target) y se imprime el arreglo, el valor (número) objetivo y el resultado de la búsqueda.
+```
+
+## Nota 🔖
+
+Para el código se utilizaron variables en inglés ya que el LeetCode pedía que fuese así para que funcionara, además como dije en la parte superior se utiliz+o el NetBeans 12.6 para realizarlo. Si se requiere más información puede dirigirse al documento PDF.
+
+## LeetCode
+**[35. Search Insert Position]** de la **[LeetCode]**
+
+[35. Search Insert Position]: https://leetcode.com/problems/search-insert-position/description/
+[LeetCode]: https://leetcode.com
