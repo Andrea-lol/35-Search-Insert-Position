@@ -1,0 +1,54 @@
+import java.util.*;
+
+public class Main{
+     
+    public static void main(String[] args) {
+        Random rand = new Random();
+        int numTestCases = 100;
+
+        // Casos de prueba cuando está en la matriz
+        for (int i = 0; i < numTestCases/2; i++){
+            int size = rand.nextInt(100) + 1;
+            int[] nums = new int[size];
+            for (int j = 0; j < size; j++){
+                nums[j] = rand.nextInt(200) - 100;
+            }
+            Arrays.sort(nums);
+            int target = nums[rand.nextInt(size)];
+            System.out.println(Arrays.toString(nums) + ", " + target + ", " + searchInsert(nums, target));
+        }
+
+        // Casos de prueba cuando no está en la matriz
+        for (int i = 0; i < numTestCases/2; i++){
+            int size = rand.nextInt(100) + 1;
+            int[] nums = new int[size];
+            for (int j = 0; j < size; j++){
+                nums[j] = rand.nextInt(200) - 100;
+            }
+            Arrays.sort(nums);
+            int target = rand.nextInt(200) - 100;
+            while (Arrays.binarySearch(nums, target) >= 0){
+                target = rand.nextInt(200) - 100;
+            }
+            System.out.println(Arrays.toString(nums) + ", " + target + ", " + searchInsert(nums, target));
+        }
+    }
+
+    public static int searchInsert(int[] nums, int target){
+        int left = 0;
+        int right = nums.length - 1;
+        
+        while (left <= right){
+            int mid = left + (right - left) / 2;
+            
+            if (nums[mid] == target){
+                return mid;
+            }else if (nums[mid] < target){
+                left = mid + 1;
+            }else{
+                right = mid - 1;
+            }
+        }
+        return left;
+    }
+}
