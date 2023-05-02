@@ -6,6 +6,9 @@
 
 Esta aplicación contiene el main y la función searchInsert. 
 
+![Imagen de Evidencia](https://github.com/Andrea-lol/35-Search-Insert-Position/blob/main/Solo%20Main/img/Evidencia5.png "Esta es una imagen de muestra.")
+
+
 - El main se encarga de recibir la entrada dada por el usuario para el tamaño de la matriz y los valores de la matriz en orden ascendente, y recibe el valor (número) objetivo, para así llamar a la función searchInsert para encontrar el índice del objetivo (ingresaro por el usuario) en la matriz. Finalmente imprimiendo el en la consola.
 
 - La función searchInsert por su parte, es la implementación de la búsqueda binaria para encontrar el índice del objetivo (número que el usuario busca) en la matriz.Por lo que, este toma un arreglo de enteros (numbers) y un entero (target). Declara dos índices, left (inicialmente es 0) y right (es el último elemento del arreglo (numbers.length - 1)), los cuales representan los límites del subarreglo en el que se buscará el objetivo.  Luego, se realiza un bucle while donde se comparan los valores del objetivo y el elemento del medio de la matriz (middle). Si este valor (numbers[middle]) es igual al objetivo, devuelve middle. Pero si numbers[middle] es menor que el objetivo, significa que el objetivo debe estar en el lado derecho de la matriz, por lo que se actualiza el índice left a middle + 1. De lo contrario, el objetivo debe estar en el lado izquierdo de la matriz, por lo que se actualiza el índice right a middle - 1. Si finalmente no se encuentra el objetivo en la matriz, el bucle while termina y se devuelve left, que es el índice donde se puede insertar el objetivo en la matriz para mantenerla ordenada.
